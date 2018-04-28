@@ -1,11 +1,13 @@
 version: "3.0"
 services:
   hostapd:
-    image: hostapdtest:0.3
+    image: debian
+    build: './hostapd'
     privileged: true
     network_mode: "host"
   dnsmasq:
-    image: dnstest:0.3
+    image: debian
+    build: './dns'
     privileged: true
     network_mode: "host"
 
