@@ -1,4 +1,4 @@
-FROM debian
+FROM armv7/armhf-debian
 RUN apt-get update
 RUN apt-get install -y dnsmasq
 ADD resolv.dnsmasq /etc
