@@ -1,4 +1,4 @@
-FROM armv7/armhf-debian
+FROM debian
 RUN apt-get update
 RUN apt-get install -y hostapd
 ADD hostapd.conf /etc/hostapd/
